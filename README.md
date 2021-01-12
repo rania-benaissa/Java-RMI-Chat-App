@@ -8,10 +8,10 @@ This project is a client-server chat application using java RMI technology (we a
 
 It follows an MVC pattern. In the **source directory** you will find 4 main directories:
 
-**assets :** where the app's icons are stored.
-**controllers :** contains relevant code for the client chat GUI interactions.
-**models :** the code for the central server and main classes.
-**views :** includes interfaces and their components.
+* **assets :** where the app's icons are stored.
+* **controllers :** contains relevant code for the client chat GUI interactions.
+* **models :** the code for the central server and main classes.
+* **views :** includes interfaces and their components.
 
 
 # Features
