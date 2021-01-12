@@ -25,6 +25,7 @@ Each user can:
 
 * See all connected users and contact them.
 * Search for a particular user in the connected users list.
+* Search for a particular group in the groups list.
 * Create a group of at least 3 users.
 * Send messages or files (pictures, records...).
 * Make video calls.
