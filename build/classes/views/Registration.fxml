@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="382.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrationController">
+   <children>
+      <Pane prefHeight="511.0" prefWidth="382.0" style="-fx-background-color: #ffffff;" stylesheets="@stylesheet.css">
+         <children>
+            <VBox layoutX="47.0" layoutY="73.0" prefHeight="297.0" prefWidth="288.0" spacing="20.0">
+               <children>
+                  <JFXTextField fx:id="name" focusColor="#005662" labelFloat="true" prefHeight="35.0" prefWidth="220.0" promptText="Name" style="-fx-prompt-text-fill: #707070;" unFocusColor="#005662">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="surname" focusColor="#005662" labelFloat="true" prefHeight="35.0" prefWidth="220.0" promptText="Surname" style="-fx-prompt-text-fill: #707070;" unFocusColor="#005662">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="username" focusColor="#005662" labelFloat="true" prefHeight="35.0" prefWidth="220.0" promptText="Username" style="-fx-prompt-text-fill: #707070;" unFocusColor="#005662">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="password" focusColor="#005662" labelFloat="true" prefHeight="35.0" prefWidth="220.0" promptText="Password" style="-fx-prompt-text-fill: #707070;" unFocusColor="#005662">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+               </children>
+            </VBox>
+            <JFXButton id="login_button" alignment="CENTER" layoutX="118.0" layoutY="386.0" onMouseClicked="#register" prefHeight="37.0" prefWidth="147.0" style="-fx-border-radius: 50; -fx-background-color: #00838e;" text="Register" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.719047619047619" endY="1.0" startX="0.4">
+                     <stops>
+                        <Stop color="#00565ca0" />
+                        <Stop color="#545454" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label id="closeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="344.0" layoutY="12.0" onMouseClicked="#close_app" prefHeight="25.0" prefWidth="30.0" styleClass="closeButton" stylesheets="@stylesheet.css" text="X" textAlignment="CENTER" textFill="#545454">
+            
+               <font>
+                  <Font name="Segoe UI Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="closeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#backToLogin" prefHeight="24.0" prefWidth="24.0" styleClass="backButton" stylesheets="@stylesheet.css" textAlignment="CENTER" textFill="#545454">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Projet_BENAISSA_Rania_MAHMOUDI_Rima.jnlp">
+  <information>
+    <title>Projet_BENAISSA_Rania_MAHMOUDI_Rima</title>
+    <vendor>Rima</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Projet_BENAISSA_Rania_MAHMOUDI_Rima.jar" size="86438" download="eager" />
+    <jar href="lib\AnimateFX-1.2.0.jar" size="85823" download="eager" />
+    <jar href="lib\bridj-0.7.0.jar" size="935929" download="eager" />
+    <jar href="lib\gson-2.6.2.jar" size="229650" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\slf4j-api-1.7.2.jar" size="26083" download="eager" />
+    <jar href="lib\webcam-capture-0.3.12.jar" size="428314" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="views.Project"  name="Projet_BENAISSA_Rania_MAHMOUDI_Rima" />
+  <update check="always"/>
+</jnlp>

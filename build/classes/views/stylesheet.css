@@ -1,0 +1,55 @@
+
+
+/*create a link effect*/
+.registerLabel:hover{
+    
+    -fx-text-fill: #00545c;
+    -fx-underline: true;
+}
+
+/* change colors  of close buttons*/
+
+.closeButton:hover{
+    
+    -fx-text-fill: #00545c;
+   
+}
+.closeButton:pressed{
+    
+    -fx-text-fill: #f44336;
+}
+
+
+
+.backButton{
+    
+   -fx-background-image: url("../assets/back_gray.png");
+   -fx-background-repeat: no-repeat;
+  
+}
+
+.backButton:hover{
+    
+    -fx-background-image: url("../assets/back_blue.png");  
+    -fx-background-repeat: no-repeat;
+}
+
+.backButton:pressed{
+    
+      -fx-background-image: url("../assets/back_red.png");  
+      -fx-background-repeat: no-repeat;
+}
+
+.backButton:focused {
+    -fx-focus-color: transparent; 
+  
+}
+
+.searchTextField{
+  -fx-background-image:url('../assets/research.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right center;
+  -fx-prompt-text-fill: white;
+  -fx-text-fill:  white;
+}
+

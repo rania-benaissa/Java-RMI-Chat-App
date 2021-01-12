@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="511.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="512.0" prefWidth="758.0">
+         <top>
+            <Pane prefHeight="512.0" prefWidth="758.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="-1.0" prefHeight="512.0" prefWidth="377.0" style="-fx-background-color: #37474f;" />
+                  <Pane fx:id="contentPane" layoutX="376.0" prefHeight="511.0" prefWidth="382.0">
+                     <children>
+                        <VBox layoutX="74.0" layoutY="76.0" prefHeight="200.0" prefWidth="239.0">
+                           <children>
+                              <JFXTextField id="username" fx:id="username" focusColor="#005662" labelFloat="true" prefHeight="35.0" prefWidth="220.0" promptText="Username" style="-fx-prompt-text-fill: #707070;" unFocusColor="#005662">
+                                 <VBox.margin>
+                                    <Insets top="60.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXPasswordField fx:id="password" focusColor="#005662" labelFloat="true" prefHeight="35.0" prefWidth="220.0" promptText="Password" unFocusColor="#005662">
+                                 <VBox.margin>
+                                    <Insets top="60.0" />
+                                 </VBox.margin>
+                              </JFXPasswordField>
+                              <JFXButton id="loginButton" alignment="CENTER" onMouseClicked="#login" prefHeight="37.0" prefWidth="147.0" style="-fx-border-radius: 50; -fx-background-color: #00838e;" text="Login" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="17.0" />
+                                 </font>
+                                 <ripplerFill>
+                                    <LinearGradient endX="0.719047619047619" endY="1.0" startX="0.4">
+                                       <stops>
+                                          <Stop color="#00565ca0" />
+                                          <Stop color="#545454" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <VBox.margin>
+                                    <Insets left="45.0" top="100.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <Label layoutX="99.0" layoutY="415.0" prefHeight="23.0" prefWidth="117.0" text="Not a member ? " textFill="#707070">
+                           <font>
+                              <Font name="Segoe UI" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label id="registerLabel" layoutX="203.0" layoutY="415.0" onMouseClicked="#openRegistration" prefHeight="23.0" prefWidth="81.0" styleClass="registerLabel" stylesheets="@stylesheet.css" text="Register here." textFill="#545454">
+                           <font>
+                              <Font name="Segoe UI Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                         
+                        </Label>
+                        <Label id="close_button" alignment="CENTER" contentDisplay="CENTER" layoutX="344.0" layoutY="12.0" onMouseClicked="#close_app" prefHeight="25.0" prefWidth="31.0" styleClass="closeButton" stylesheets="@stylesheet.css" text="X" textAlignment="CENTER" textFill="#545454">
+                           
+                           <font>
+                              <Font name="Segoe UI Bold" size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

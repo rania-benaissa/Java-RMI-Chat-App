@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="617.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChatRoomController">
+   <children>
+      <HBox prefHeight="617.0" prefWidth="1022.0">
+         <children>
+            <Pane prefHeight="571.0" prefWidth="240.0" style="-fx-background-color: #37474f;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="94.0" layoutY="551.0" onMouseClicked="#disconnect" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logout.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <VBox alignment="CENTER" layoutX="14.0" layoutY="121.0" prefHeight="77.0" prefWidth="200.0">
+                     <children>
+                        
+                        <Label fx:id="UserInfos" alignment="CENTER" contentDisplay="CENTER" prefHeight="61.0" prefWidth="200.0" text="Empty" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="username" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="168.0" text="Empty" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="29.0" fitWidth="40.0" layoutX="190.0" layoutY="229.0" onMouseClicked="#createGroup" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/add_friend.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Separator layoutY="210.0" prefHeight="3.0" prefWidth="240.0" />
+                  <JFXTextField fx:id="GroupsSearchbar" focusColor="WHITE" layoutX="16.0" layoutY="229.0" prefHeight="29.0" prefWidth="157.0" promptText="Search group.." styleClass="searchTextField" stylesheets="@stylesheet.css" unFocusColor="WHITE" />
+                  <ListView fx:id="groupsList" layoutX="16.0" layoutY="279.0" prefHeight="255.0" prefWidth="200.0" />
+                  <Circle fx:id="profilePic" fill="DODGERBLUE" layoutX="114.0" layoutY="76.0" radius="54.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <ImageView fitHeight="36.0" fitWidth="29.0" layoutX="144.0" layoutY="95.0" onMouseClicked="#changePicture" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/add_button.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children></Pane>
+            <Pane fx:id="chatPane" prefHeight="620.0" prefWidth="545.0" style="-fx-background-color: #ffffff ;">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="488.0" layoutY="575.0" onMouseClicked="#sendMsg" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/send_message.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="29.0" layoutY="575.0" onMouseClicked="#attachFile" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/attach.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <HBox layoutX="48.0" layoutY="9.0" prefHeight="40.0" prefWidth="448.0">
+                     <children>
+                        <Label fx:id="DestinataireName" prefHeight="52.0" prefWidth="403.0" text="Empty" textAlignment="CENTER" textFill="#37474f" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="videoCallButton" fitHeight="50.0" fitWidth="45.0" onMouseClicked="#videocall" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/film.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <JFXTextField fx:id="textMessage" layoutX="66.0" layoutY="548.0" prefHeight="55.0" prefWidth="416.0" promptText="Enter a message...">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <VBox fx:id="VboxContainer" layoutX="3.0" layoutY="60.0" prefHeight="488.0" prefWidth="537.0">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="389.0" prefWidth="522.0" style="-fx-background-color: #ffffff;" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="ChatContainer" prefHeight="380.0" prefWidth="533.0" style="-fx-background-color: #ffffff;" />
+                           </content>
+                        </ScrollPane>
+                        <ListView fx:id="filesList" orientation="HORIZONTAL" prefHeight="92.0" prefWidth="498.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children></Pane>
+            <Pane prefHeight="600.0" prefWidth="240.0" style="-fx-background-color: #37474f;">
+               <children>
+                  <ImageView fx:id="go" fitHeight="29.0" fitWidth="92.0" layoutX="114.0" layoutY="571.0" onMouseClicked="#groupSelected" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../assets/checkmark.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="21.0" layoutY="25.0" prefHeight="55.0" prefWidth="200.0" text="Online Users" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="onlineUsers" layoutX="21.0" layoutY="132.0" prefHeight="421.0" prefWidth="200.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ListView>
+                  <JFXTextField fx:id="UsersSearchBar" focusColor="WHITE" layoutX="22.0" layoutY="93.0" prefHeight="29.0" prefWidth="200.0" promptText="Search user.." styleClass="searchTextField" stylesheets="@stylesheet.css" unFocusColor="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
