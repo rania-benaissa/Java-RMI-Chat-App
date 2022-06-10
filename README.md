@@ -39,7 +39,7 @@ To run this app correctly, install:
 * You also have to add the following jars (located in **Jars** folder): 
   * AnimateFX-1.2.0
   * bridj-0.7.0
-  * gson-2.6.0
+  * gson-2.6.2
   * jfeonix-8.0.10
   * slf4j-api-1.7.2
   * webcam-capture-0.3.12
