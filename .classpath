@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/lib/AnimateFX-1.2.0.jar"/>
+	<classpathentry kind="lib" path="dist/lib/bridj-0.7.0.jar"/>
+	<classpathentry kind="lib" path="dist/lib/gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/jfoenix-8.0.10.jar"/>
+	<classpathentry kind="lib" path="dist/lib/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/webcam-capture-0.3.12.jar"/>
+	<classpathentry kind="lib" path="dist/Projet_BENAISSA_Rania_MAHMOUDI_Rima.jar"/>
+	<classpathentry kind="lib" path="Jars/AnimateFX-1.2.0.jar"/>
+	<classpathentry kind="lib" path="Jars/bridj-0.7.0.jar"/>
+	<classpathentry kind="lib" path="Jars/gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="Jars/jfoenix-8.0.10.jar"/>
+	<classpathentry kind="lib" path="Jars/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="Jars/webcam-capture-0.3.12.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
