@@ -56,14 +56,14 @@ After that, follow these steps:
 1. compile java files located in ***models  folder***. To do so, open ***models  folder*** in cmd and run this line:
 
 ```
-$ javac *.java
+javac *.java
 
 ```
 
 2. Open ***src  folder*** in cmd and run the following code to start the RMI registry:
 
 ```
-$ start rmiregistry
+start rmiregistry
 
 ```
 
